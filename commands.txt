@@ -1,0 +1,14 @@
+pip install virtualenv
+
+virtualenv venv
+
+pip uninstall torch torchvision torchaudio -y
+
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+python -c "import torch; print(torch.__version__); print(torch.rand(2,3))"
+
+
+python -c "from sentence_transformers import SentenceTransformer; print('Sentence Transformers working!')"
+
+python rag_pipeline.py ingest docs/topics.pdf

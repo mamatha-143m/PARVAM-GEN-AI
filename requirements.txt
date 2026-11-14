@@ -1,2 +1,6 @@
-groq 
-python-dotenv
+groq
+python-dotenv 
+chromadb
+sentence-transformers
+pypdf
+python-docx
